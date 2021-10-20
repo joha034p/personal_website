@@ -1,0 +1,9 @@
+Plan:
+0. Moodboard and styletile
+1. Find pics that should go on the website
+2. Create all text blocks and content
+3. Create the basic html and css setup
+4. Figure out which parts should be interactable
+5. Start hardcoding javascript
+6. Model-View-Controller setup
+7. Make one function work at a time

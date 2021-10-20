@@ -1,0 +1,313 @@
+/* 
+.
+.
+.
+.
+generel */
+body {
+  margin: 0;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  background-color: #bdbdbd;
+}
+
+main {
+  background-color: #1b1b1b;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+footer {
+  padding-top: 200px;
+}
+
+@font-face {
+  font-family: lemonMilk;
+  src: url(fonts/LemonMilk.otf);
+}
+
+h2 {
+  padding-left: 10vw;
+  text-align: left;
+  font-size: 3em;
+  font-family: lemonMilk;
+  color: blanchedalmond;
+}
+
+p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+
+/* 
+.
+.
+.
+.
+top section */
+#topsection {
+  padding-bottom: 20vh;
+}
+
+#topimg {
+  width: 100%;
+  height: 95vh;
+  background-image: url(images/mountain-4021090_1920.jpg);
+  background-size: contain;
+  filter: invert(1) saturate(0.5);
+  background-position: 50%;
+}
+
+.titlewrap {
+  position: absolute;
+  top: 65%;
+  opacity: 75%;
+  backdrop-filter: invert(1);
+}
+
+#title {
+  margin: 20px;
+  font-family: lemonMilk;
+  font-size: 5rem;
+  color: #484848;
+  background-size: cover;
+  padding-left: 5vw;
+}
+
+/* 
+.
+.
+.
+.
+about me section */
+#aboutme {
+  display: grid;
+  gap: 5em;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #c9d2da;
+  padding-top: 10vw;
+  padding-bottom: 100px;
+}
+
+.interests {
+  grid-column: 1;
+}
+
+.home {
+  grid-column: 2;
+}
+
+.interests p,
+.home p {
+  border-left: 10px solid;
+  padding-left: 10px;
+}
+
+.wave {
+  background-color: #c9d2da;
+  width: auto;
+  height: 14vw;
+  clip-path: polygon(
+    100% 0%,
+    0% 0%,
+    0% 65%,
+    1% 64.95%,
+    2% 64.8%,
+    3% 64.6%,
+    4% 64.3%,
+    5% 63.9%,
+    6% 63.45%,
+    7% 62.9%,
+    8% 62.25%,
+    9% 61.55%,
+    10% 60.8%,
+    11% 59.95%,
+    12% 59.05%,
+    13% 58.1%,
+    14% 57.1%,
+    15% 56.05%,
+    16% 55%,
+    17% 53.9%,
+    18% 52.8%,
+    19% 51.65%,
+    20% 50.5%,
+    21% 49.35%,
+    22% 48.2%,
+    23% 47.05%,
+    24% 45.9%,
+    25% 44.8%,
+    26% 43.75%,
+    27% 42.75%,
+    28% 41.75%,
+    29% 40.8%,
+    30% 39.9%,
+    31% 39.1%,
+    32% 38.35%,
+    33% 37.65%,
+    34% 37.05%,
+    35% 36.5%,
+    36% 36.05%,
+    37% 35.65%,
+    38% 35.35%,
+    39% 35.15%,
+    40% 35.05%,
+    41% 35%,
+    42% 35.05%,
+    43% 35.2%,
+    44% 35.45%,
+    45% 35.75%,
+    46% 36.15%,
+    47% 36.65%,
+    48% 37.2%,
+    49% 37.85%,
+    50% 38.55%,
+    51% 39.35%,
+    52% 40.2%,
+    53% 41.1%,
+    54% 42.05%,
+    55% 43.05%,
+    56% 44.1%,
+    57% 45.15%,
+    58% 46.3%,
+    59% 47.4%,
+    60% 48.55%,
+    61% 49.7%,
+    62% 50.85%,
+    63% 52%,
+    64% 53.15%,
+    65% 54.25%,
+    66% 55.35%,
+    67% 56.4%,
+    68% 57.45%,
+    69% 58.4%,
+    70% 59.35%,
+    71% 60.2%,
+    72% 61.05%,
+    73% 61.8%,
+    74% 62.45%,
+    75% 63.05%,
+    76% 63.6%,
+    77% 64.05%,
+    78% 64.4%,
+    79% 64.7%,
+    80% 64.85%,
+    81% 65%,
+    82% 65%,
+    83% 64.9%,
+    84% 64.75%,
+    85% 64.5%,
+    86% 64.2%,
+    87% 63.75%,
+    88% 63.25%,
+    89% 62.7%,
+    90% 62.05%,
+    91% 61.3%,
+    92% 60.5%,
+    93% 59.65%,
+    94% 58.75%,
+    95% 57.8%,
+    96% 56.8%,
+    97% 55.75%,
+    98% 54.65%,
+    99% 53.55%,
+    100% 52.4%
+  );
+}
+
+/* 
+.
+.
+.
+.
+my work section */
+#mywork {
+  padding-top: 100px;
+}
+
+#mywork_title {
+  text-align: center;
+  padding-left: 0;
+}
+
+.mywork_txtwrap p {
+  color: white;
+  margin: auto;
+  width: 30vw;
+}
+
+/* 
+.
+.
+.
+.
+header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+nav a {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #bbbbbb;
+  opacity: 60%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 100%;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #bbbbbb;
+  height: 1px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+nav a:hover:before {
+  right: 0;
+}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+/* nav a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #bbbbbb;
+} */
+
+/* nav a:after {
+  transition: all ease-in-out 0.5s;
+  background: none repeat scroll 0 0 #bbbbbb;
+  content: "";
+  height: 1px;
+  width: 0;
+  display: flex;
+}
+nav a:hover:after {
+  width: 100%;
+  opacity: 1;
+} */
