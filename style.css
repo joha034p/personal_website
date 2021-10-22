@@ -342,10 +342,37 @@ my work section */
 .read {
   background-color: black;
   position: absolute;
-  z-index: 100;
   width: auto;
   height: auto;
   opacity: 80%;
+}
+
+.project_info {
+  display: grid;
+  align-items: center;
+  background-color: black;
+  opacity: 90%;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  color: white;
+}
+
+.project_info a {
+  color: white;
+  text-decoration: none;
+}
+
+.project_info .x {
+  margin: auto;
+  top: 0;
+  position: absolute;
+  transition: 0.6s;
+}
+.project_info .x:hover {
+  margin: auto;
+  transition: 0.6s;
+  font-size: 1.3rem;
 }
 
 /* 
