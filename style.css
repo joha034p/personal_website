@@ -9,11 +9,11 @@ body {
   padding-left: 12vw;
   padding-right: 12vw;
   padding-bottom: 400px;
-  background-color: #bdbdbd;
+  background-color: #dcdcdc;
 }
 
 main {
-  background-color: #1b1b1b;
+  background-color: #83a0a7;
   box-shadow: rgb(0, 0, 0) 0px 0px 7px;
   padding-bottom: 200px;
   overflow: hidden;
@@ -27,15 +27,15 @@ main {
 h2 {
   padding-left: 10vw;
   text-align: left;
-  font-size: 3em;
+  font-size: 4em;
   font-family: lemonMilk;
-  color: blanchedalmond;
+  color: aliceblue;
 }
 
 h3 {
   text-align: left;
   font-family: lemonMilk;
-  color: blanchedalmond;
+  color: aliceblue;
 }
 
 h4 {
@@ -64,7 +64,7 @@ top section */
 
 #topimg {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   top: 75px;
   position: relative;
   background-image: url(images/mountain-4021090_1920.jpg);
@@ -95,34 +95,50 @@ top section */
 .
 .
 about me section */
-#aboutme {
+#about_top {
+  position: relative;
+  background-image: linear-gradient(0deg, #759096, transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+#aboutme_wrapper {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 5em;
-  padding: 10vw;
-  padding-bottom: 40px;
-  background-color: #b4cade;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-.interests {
-  grid-column: 1;
+#aboutme_title {
+  padding-left: 0;
+  text-align: center;
+  align-items: center;
 }
 
-.home {
-  grid-column: 2;
+#portrait {
+  background-image: url(images/portrait.png);
+  width: 250px;
+  height: 250px;
+  background-size: cover;
 }
 
 .interests p,
 .home p {
-  border-left: 10px solid;
+  border-left: 10px solid aliceblue;
   padding-left: 10px;
+  color: white;
 }
 
 .wave {
   position: relative;
-  background-color: #b4cade;
+  background-color: #83a0a7;
   width: auto;
   height: 14vw;
-  top: -1vw;
+  top: -1px;
   clip-path: polygon(
     100% 0%,
     0% 0%,
@@ -236,12 +252,16 @@ about me section */
 .
 .
 capabilities section */
+#capabilities {
+  background-color: #b4cade;
+}
+
 .capabilities_wrapper {
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  gap: 30px;
-  color: white;
+  gap: 5em;
+  color: black;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -252,10 +272,9 @@ capabilities section */
 .
 .
 my work section */
-#mywork {
-  padding-top: 100px;
+#mywork .wave {
+  background-color: #b4cade;
 }
-
 .mywork_txtwrap p {
   color: white;
   padding-left: 10vw;
@@ -264,6 +283,8 @@ my work section */
 
 #projects {
   position: relative;
+  overflow: hidden;
+  background-color: #2f2f2f;
 }
 
 #projects_wrapper {
@@ -271,10 +292,7 @@ my work section */
   display: flex;
 }
 
-#project_1,
-#project_2,
-#project_3,
-#project_4 {
+.project {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,21 +376,26 @@ my work section */
   color: white;
 }
 
+.project_info_txt {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .project_info a {
   color: white;
   text-decoration: none;
 }
 
 .project_info .x {
-  margin: auto;
-  top: 0;
-  position: absolute;
-  transition: 0.6s;
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 0;
+  transition: 0.3s;
 }
 .project_info .x:hover {
-  margin: auto;
   transition: 0.6s;
-  font-size: 1.3rem;
+  transform: scale(1.5);
 }
 
 /* 
