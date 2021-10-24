@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", start);
 function start() {
   console.log("start");
   addEventListeners();
+  scrollBottom();
 }
 
 function addEventListeners() {
@@ -45,4 +46,16 @@ function closeProject() {
   this.parentElement.classList.add("hide");
   this.parentElement.classList.remove("show");
   addEventListeners();
+}
+
+function scrollBottom() {
+  window.onscroll = function (ev) {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      document.querySelector("footer").style.zIndex = "0";
+      document.querySelector("footer h2").style.opacity = "1";
+    } else {
+      document.querySelector("footer").style.zIndex = "-1";
+      document.querySelector("footer h2").style.opacity = "0";
+    }
+  };
 }

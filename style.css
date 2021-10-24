@@ -23,6 +23,10 @@ main {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: lemonMilk;
   src: url(fonts/LemonMilk.otf);
@@ -459,10 +463,6 @@ nav a:hover:before {
   right: 0;
 }
 
-nav a:visited {
-  text-decoration: none;
-}
-
 /* 
 .
 .
@@ -471,7 +471,6 @@ nav a:visited {
 footer */
 footer {
   position: fixed;
-  z-index: -100;
   bottom: 20px;
   left: 0;
   width: 100%;
@@ -484,9 +483,47 @@ footer {
   padding-left: 12vw;
   padding-right: 12vw;
 }
+.footer_text p {
+  display: flex;
+  color: black;
+}
+
+.footer_text img {
+  width: 20px;
+}
+
+.footer_text .contact p {
+  display: block;
+}
+
+.footer_text a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer_text a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: black;
+  height: 1px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.footer_text a:hover:before {
+  right: 0;
+}
+
 footer h2 {
   text-align: center;
   padding-left: 0;
+  transition: 0.5s;
 }
 
 ul {
