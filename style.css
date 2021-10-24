@@ -482,6 +482,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   padding-left: 12vw;
   padding-right: 12vw;
+  gap: 10px;
 }
 .footer_text p {
   display: flex;
@@ -492,7 +493,8 @@ footer {
   width: 20px;
 }
 
-.footer_text .contact p {
+.footer_text .contact p,
+.footer_text .links p {
   display: block;
 }
 
