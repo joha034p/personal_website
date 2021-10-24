@@ -434,6 +434,10 @@ nav {
   height: 75px;
 }
 
+nav img {
+  width: 40px;
+}
+
 nav a {
   font-family: "Jost", sans-serif;
   font-size: 1.2rem;
@@ -474,6 +478,7 @@ footer {
   bottom: 20px;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .footer_text {
